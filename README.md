@@ -69,10 +69,8 @@ python3 app.py
 Open your browser at [this](http://localhost:8080)
 
 you will see a "Not Found" error,
-        
-If so,
-        
-Try [this](http://localhost:8080/google.potato)
+    
+Try [this](http://localhost:8080/google.potato) instead.
 
 You should see Google :)
 
