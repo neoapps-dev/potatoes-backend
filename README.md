@@ -49,7 +49,7 @@ Alright, Let's get started!
 
         To install Python on macOS:
 
-            Already installed :)
+            Download [this](https://www.python.org/ftp/python/3.12.6/python-3.12.6-macos11.pkg) and then install python on your Mac.
 
     
     2. Installing Dependencies
