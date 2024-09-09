@@ -1,3 +1,4 @@
+import mimetypes
 import requests
 from flask import Flask, Response, request
 
@@ -46,14 +47,16 @@ def resolve_potato(pdomain, subpath):
             try:
                 _, user, repo, branch = destination.split('/')
                 content, status_code = fetch_github_content(user, repo, branch)
-                return Response(content, status=status_code, mimetype='text/html')
+                mimetype, _ = mimetypes.guess_type('web.potato')
+                return Response(content, status=status_code, mimetype=mimetype or 'text/html')
             except Exception as e:
                 return f"Error processing GitHub entry: {str(e)}", 500
         elif destination.startswith("http"):
             try:
                 target_url = f"{destination}/{subpath}" if subpath else destination
                 content, status_code = fetch_url_content(target_url)
-                return Response(content, status=status_code, mimetype='text/html')
+                mimetype, _ = mimetypes.guess_type(target_url)
+                return Response(content, status=status_code, mimetype=mimetype or 'text/html')
             except Exception as e:
                 return f"Error fetching URL: {str(e)}", 500
 
