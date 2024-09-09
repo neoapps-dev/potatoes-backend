@@ -23,58 +23,58 @@ You can run your own Potato server!
 
 Alright, Let's get started!
 
-    1. Installing Python
+1. Installing Python
 
-        To Install Python on Windows:
+To Install Python on Windows:
 
-            - Go to [this](https://python.org) website and install python 3.10
+- Go to [this](https://python.org) website and install python 3.10
 
 
-        To Install Python on GNU/Linux:
+To Install Python on GNU/Linux:
 
-            - On Debian-based systems:
+- On Debian-based systems:
 
-                ```sh
-                sudo apt update
-                sudo apt install python3
-                ```
+```sh
+sudo apt update
+sudo apt install python3
+```
 
-            - On Arch-based systems:
+- On Arch-based systems:
 
-                ```sh
-                sudo pacman -Syu
-                sudo pacman -S python
-                ```
-            - Other: Search for your distribution.
+```sh
+sudo pacman -Syu
+sudo pacman -S python
+```
+- Other: Search for your distribution.
 
-        To install Python on macOS:
+To install Python on macOS:
 
-            Download [this](https://www.python.org/ftp/python/3.12.6/python-3.12.6-macos11.pkg) and then install python on your Mac.
+Download [this](https://www.python.org/ftp/python/3.12.6/python-3.12.6-macos11.pkg) and then install python on your Mac.
 
     
-    2. Installing Dependencies
+2. Installing Dependencies
 
-        ```sh
-        pip install -r requirements.txt
-        ```
+```sh
+pip install -r requirements.txt
+```
 
-    3. Running the server
+3. Running the server
 
-        ```sh
-        python3 app.py
-        ```
-    
-    4. Open your browser
+```sh
+python3 app.py
+```
 
-        Open your browser at [this](http://localhost:8080)
+4. Open your browser
 
-        you will see a "Not Found" error,
+Open your browser at [this](http://localhost:8080)
+
+you will see a "Not Found" error,
         
-        If so,
+If so,
         
-        Try [this](http://localhost:8080/google.potato)
+Try [this](http://localhost:8080/google.potato)
 
-        You should see Google :)
+You should see Google :)
 
 ## NOTE
 This is currently under construction, not finished yet :)
