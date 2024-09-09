@@ -28,7 +28,7 @@ def fetch_github_content(user, repo, branch):
     return response.text if response.status_code == 200 else "GitHub content not found", response.status_code
 
 def fetch_url_content(url):
-    response = requests.get(url)
+    response = requests.get(url, verify=False)
     return response.text if response.status_code == 200 else "URL content not found", response.status_code
 
 @app.route('/<pdomain>.potato', defaults={'subpath': ''})
