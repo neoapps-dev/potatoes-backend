@@ -22,8 +22,8 @@ def fetch_hosts():
         print(f"Error fetching HOSTS.txt: {str(e)}")
         return None
 
-def fetch_github_content(user, repo, branch):
-    url = f"https://raw.githubusercontent.com/{user}/{repo}/{branch}/web.potato"
+def fetch_github_content(user, repo, branch, path):
+    url = f"https://raw.githubusercontent.com/{user}/{repo}/{branch}/{path}"
     response = requests.get(url)
     return response.text if response.status_code == 200 else "GitHub content not found", response.status_code
 
@@ -46,9 +46,9 @@ def resolve_potato(pdomain, subpath):
         destination = hosts_mapping[domain]
         if destination.startswith("gh/"):
             try:
-                _, user, repo, branch = destination.split('/')
-                content, status_code = fetch_github_content(user, repo, branch)
-                mimetype, _ = mimetypes.guess_type('web.potato')
+                _, user, repo, branch, pathh = destination.split('/')
+                content, status_code = fetch_github_content(user, repo, branch, pathh)
+                mimetype, _ = mimetypes.guess_type(pathh)
                 return Response(content, status=status_code, mimetype=mimetype or 'text/html')
             except Exception as e:
                 return f"Error processing GitHub entry: {str(e)}", 500
