@@ -47,6 +47,8 @@ def resolve_potato(pdomain, subpath):
         if destination.startswith("gh/"):
             try:
                 _, user, repo, branch = destination.split('/')
+                if not subpath:
+                    subpath = "web.potato"
                 content, status_code = fetch_github_content(user, repo, branch, subpath)
                 mimetype, _ = mimetypes.guess_type(subpath)
                 return Response(content, status=status_code, mimetype=mimetype or 'text/html')
