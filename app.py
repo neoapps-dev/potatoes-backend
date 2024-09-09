@@ -40,6 +40,7 @@ def resolve_potato(pdomain, subpath):
         return "Error fetching HOSTS.txt", 500
 
     domain = f"{pdomain}.potato"
+    query_params = request.query_string.decode()
 
     if domain in hosts_mapping:
         destination = hosts_mapping[domain]
@@ -54,6 +55,8 @@ def resolve_potato(pdomain, subpath):
         elif destination.startswith("http"):
             try:
                 target_url = f"{destination}/{subpath}" if subpath else destination
+                if query_params:
+                    target_url = f"{target_url}?{query_params}"
                 content, status_code = fetch_url_content(target_url)
                 mimetype, _ = mimetypes.guess_type(target_url)
                 return Response(content, status=status_code, mimetype=mimetype or 'text/html')
