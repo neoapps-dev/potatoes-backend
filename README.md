@@ -1,12 +1,12 @@
 # Potatoes Backend
 Welcome to Potatoes!
 
-A very weird proxy and domain system made with Python and Flask!
+A very weird RFP (Reverse Fetch Proxy) and domain system made with Python and Flask!
 
 You can get a `.potato` domain for free!
 
 ## Deploying
-Don't trust our official server? No worries!
+Don't trust our [official server](https://potatoes-backend.vercel.app/)? No worries!
 
 You can deploy your own server!
 
@@ -23,33 +23,22 @@ You can run your own Potato server!
 
 Alright, Let's get started!
 
-1. Installing Python
+1. **Installing Python**
 
-To Install Python on Windows:
-
-- Go to [this](https://python.org) website and install python 3.10
-
-
-To Install Python on GNU/Linux:
-
-- On Debian-based systems:
-
-```sh
-sudo apt update
-sudo apt install python3
-```
-
-- On Arch-based systems:
-
-```sh
-sudo pacman -Syu
-sudo pacman -S python
-```
-- Other: Search for your distribution.
-
-To install Python on macOS:
-
-Download [this](https://www.python.org/ftp/python/3.12.6/python-3.12.6-macos11.pkg) and then install python on your Mac.
+   - **On Windows**: Download and install Python 3.12.6+ from [Python.org](https://python.org).
+   - **On GNU/Linux**:
+     - **Debian-based systems**:
+       ```sh
+       sudo apt update
+       sudo apt install python3
+       ```
+     - **Arch-based systems**:
+       ```sh
+       sudo pacman -Syu
+       sudo pacman -S python
+       ```
+     - **Other distributions**: Search for Python installation instructions specific to your distribution.
+   - **On macOS**: Download and install Python 3.12.6+ from [Python.org](https://www.python.org/ftp/python/3.12.6/python-3.12.6-macos11.pkg).
 
     
 2. Installing Dependencies
@@ -74,5 +63,9 @@ Try [this](http://localhost:8080/google.potato) instead.
 
 You should see Google :)
 
+## Contributing
+
+If you want to contribute to Potatoes or report issues, please check out our [contributing guidelines](CONTRIBUTING.md) or [file an issue](https://github.com/neoapps-dev/potatoes-backend/issues).
+
 ## NOTE
-This is currently under construction, not finished yet :)
+This project is currently under construction and may not be fully functional yet. Stay tuned for updates!
