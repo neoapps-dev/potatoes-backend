@@ -46,9 +46,9 @@ def resolve_potato(pdomain, subpath):
         destination = hosts_mapping[domain]
         if destination.startswith("gh/"):
             try:
-                _, user, repo, branch, pathh = destination.split('/')
-                content, status_code = fetch_github_content(user, repo, branch, pathh)
-                mimetype, _ = mimetypes.guess_type(pathh)
+                _, user, repo, branch = destination.split('/')
+                content, status_code = fetch_github_content(user, repo, branch, subpath)
+                mimetype, _ = mimetypes.guess_type(subpath)
                 return Response(content, status=status_code, mimetype=mimetype or 'text/html')
             except Exception as e:
                 return f"Error processing GitHub entry: {str(e)}", 500
