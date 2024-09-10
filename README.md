@@ -1,9 +1,13 @@
 <p align="center">
-  <img src="https://github.com/neoapps-dev.png" alt="RobokEngine" width="120" height="120"/>
+  <img src="https://github.com/neoapps-dev.png" alt="The Dev :)" width="120" height="120"/>
 </p>
 <div align="center">
     <h1>Potatoes</h1>
     <p>A very weird RFP (Reverse Fetch Proxy) and domain system made with Python and Flask!</p>
+    <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
+    <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
+    <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
+    <img alt="GitHub Repo stars" src="https://img.shields.io/github/stars/neoapps-dev/potatoes-backend?style=for-the-badge">
 </div>
 
 
@@ -61,9 +65,9 @@ Alright, Let's get started!
 
   you will see a "Not Found" error,
     
-    Try [this](http://localhost:8080/google.potato) instead.
+  Try [this](http://localhost:8080/google.potato) instead.
 
-    You should see Google :)
+  You should see Google :)
 
 ## Contributing
 
