@@ -31,7 +31,7 @@ def fetch_url_content(url):
     response = requests.get(url, verify=False)
     return response.text if response.status_code == 200 else "URL content not found", response.status_code
 
-@app.route('/<pdomain>.potato', defaults={'subpath': ''})
+@app.route('/<pdomain>.potato/', defaults={'subpath': ''})
 @app.route('/<pdomain>.potato/<path:subpath>')
 def resolve_potato(pdomain, subpath):
     hosts_mapping = fetch_hosts()
