@@ -41,7 +41,7 @@ Alright, Let's get started!
        ```
      - **Arch-based systems**:
        ```sh
-       sudo pacman -Syu
+       sudo pacman -Sy
        sudo pacman -S python
        ```
      - **Other distributions**: Search for Python installation instructions specific to your distribution.
