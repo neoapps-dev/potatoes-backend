@@ -57,7 +57,7 @@ Alright, Let's get started!
 3. **Running the server**
 
   ```sh
-  python3 app.py
+  python3 src/app.py
   ```
 
 4. **Open your browser**
