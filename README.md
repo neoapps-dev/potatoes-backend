@@ -1,9 +1,11 @@
-# Potatoes Backend
-Welcome to Potatoes!
+<p align="center">
+  <img src="https://github.com/neoapps-dev.png" alt="RobokEngine" width="120" height="120"/>
+</p>
+<div align="center">
+    <h1>Potatoes</h1>
+    <p>A very weird RFP (Reverse Fetch Proxy) and domain system made with Python and Flask!</p>
+</div>
 
-A very weird RFP (Reverse Fetch Proxy) and domain system made with Python and Flask!
-
-You can get a `.potato` domain for free!
 
 ## Deploying
 Don't trust our [official server](https://potatoes-backend.vercel.app/)? No worries!
@@ -41,27 +43,27 @@ Alright, Let's get started!
    - **On macOS**: Download and install Python 3.12.6+ from [Python.org](https://www.python.org/ftp/python/3.12.6/python-3.12.6-macos11.pkg).
 
     
-2. Installing Dependencies
+2. **Installing Dependencies**
 
-```sh
-pip install -r requirements.txt
-```
+  ```sh
+  pip install -r requirements.txt
+  ```
 
-3. Running the server
+3. **Running the server**
 
-```sh
-python3 app.py
-```
+  ```sh
+  python3 app.py
+  ```
 
-4. Open your browser
+4. **Open your browser**
 
-Open your browser at [this](http://localhost:8080)
+  Open your browser at [this](http://localhost:8080)
 
-you will see a "Not Found" error,
+  you will see a "Not Found" error,
     
-Try [this](http://localhost:8080/google.potato) instead.
+    Try [this](http://localhost:8080/google.potato) instead.
 
-You should see Google :)
+    You should see Google :)
 
 ## Contributing
 
