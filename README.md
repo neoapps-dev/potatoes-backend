@@ -3,7 +3,7 @@
 </p>
 <div align="center">
     <h1>Potatoes</h1>
-    <p>A very weird RFP (Reverse Fetch Proxy) and domain system made with Python and Flask!</p>
+    <p>A very weird RFP (Reverse-Fetch Proxy) and domain system made with Python and Flask!</p>
     <img src="https://img.shields.io/badge/Vercel-000000?style=for-the-badge&logo=vercel&logoColor=white" />
     <img src="https://img.shields.io/badge/Flask-000000?style=for-the-badge&logo=flask&logoColor=white" />
     <img src="https://img.shields.io/badge/Python-FFD43B?style=for-the-badge&logo=python&logoColor=blue" />
